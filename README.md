@@ -1,4 +1,4 @@
-# Js-Url-Edit 
+# JS-Url-Edit 
 #### javascript / Jquery
 ######## изменение (редактирование) Url без перезагрузки 
 
