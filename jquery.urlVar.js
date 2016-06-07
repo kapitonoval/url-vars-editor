@@ -55,7 +55,7 @@ $.extend({
 				console.log(element);
 				urlString += ((index==0)?'?':'&') + element + '=' + hashes[element];
 			});
-			window.history.pushState("object or string", "Портфолио", "/os/" + urlString);
+			window.history.pushState("object or string", "page name",urlString);
 		}
 	}
 });
