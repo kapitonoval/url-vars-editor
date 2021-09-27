@@ -5,8 +5,8 @@
  * @author Alexey Kapitonov
  * @version 10.05.2016
  */
-class UrlVars {
-    getVars() {
+var urlVars = {
+    getVars: function () {
         var vars = [], hash;
         var pos  = window.location.href.indexOf('?');
         if (pos > 0) {
@@ -18,15 +18,15 @@ class UrlVars {
             }
         }
         return vars;
-    }
+    },
 
-    getVar(key, val) {
+    getVar: function (key, val) {
         return val === undefined
             ? this.getVars()[key]
             : this.setVar(key, val);
-    }
+    },
 
-    setVar(key, val) {
+    setVar: function (key, val) {
         var hashes = $.getUrlVars();
 
         if (hashes[key] === undefined) {
@@ -40,9 +40,9 @@ class UrlVars {
             urlString += ((index === 0) ? '?' : '&') + element + '=' + hashes[element];
         });
         window.history.pushState("object or string", "page name", urlString);
-    }
+    },
 
-    delVar(key) {
+    delVar: function (key) {
         var hashes = this.getVars();
 
         if (hashes[key] !== undefined) {
@@ -56,5 +56,4 @@ class UrlVars {
     }
 }
 
-const urlVars = new UrlVars;
 export default urlVars;
