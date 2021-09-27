@@ -1,6 +1,6 @@
 {
   "name": "url-vars-editor",
-  "version": "5.3.2",
+  "version": "1.0.0",
   "filename": "urlvars.js",
   "license": "MIT",
   "author": "Alexander Farkas <kapitonoval2012@gmail.com>",
@@ -16,8 +16,7 @@
   "main": "urlvars.js",
   "browser": "urlvars.js",
   "types": "urlvars.d.ts",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "npmName": "url-vars-editor",
   "npmFileMap": [
     {
@@ -33,5 +32,9 @@
     "url editor",
     "no redirect",
     "edit url params"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/kapitonoval/url-vars-editor/issues"
+  },
+  "homepage": "https://github.com/kapitonoval/url-vars-editor#readme"
 }
