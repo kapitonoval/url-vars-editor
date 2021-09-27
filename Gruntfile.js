@@ -84,6 +84,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-qunit');
 
     // Default task.
-    grunt.registerTask("default", [ "wrapcore", "test", "uglify", "bytesize", "maxFilesize" ]);
+    grunt.registerTask("default", [ "uglify", "bytesize", "maxFilesize" ]);
     grunt.registerTask("test", [ "jshint" ]);
 };

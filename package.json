@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "Alexander Farkas <kapitonoval2012@gmail.com>",
   "scripts": {
-    "build": "grunt && tsc && grunt importTs",
+    "build": "grunt",
     "prepublishOnly": "npm run build"
   },
   "repository": {
