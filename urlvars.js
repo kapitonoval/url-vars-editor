@@ -1,9 +1,8 @@
 /**
  * UrlVARS
  * operations with URL
- * @simple $.urlVar('get_myvar','valuue');
  * @author Alexey Kapitonov
- * @version 10.05.2016
+ * @version 27.09.2012
  */
 var urlVars = {
     getVars: function () {
@@ -27,7 +26,7 @@ var urlVars = {
     },
 
     setVar: function (key, val) {
-        var hashes = $.getUrlVars();
+        let hashes = this.getVars();
 
         if (hashes[key] === undefined) {
             hashes.push(key);
