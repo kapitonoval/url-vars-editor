@@ -1,0 +1,37 @@
+{
+  "name": "url-vars-editor",
+  "version": "5.3.2",
+  "filename": "urlvars.js",
+  "license": "MIT",
+  "author": "Alexander Farkas <kapitonoval2012@gmail.com>",
+  "scripts": {
+    "build": "grunt && tsc && grunt importTs",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kapitonoval/url-vars-editor.git"
+  },
+  "namespace": "urlVars",
+  "main": "urlvars.js",
+  "browser": "urlvars.js",
+  "types": "urlvars.d.ts",
+  "devDependencies": {
+  },
+  "npmName": "url-vars-editor",
+  "npmFileMap": [
+    {
+      "basePath": "/",
+      "files": [
+        "urlvars.js"
+      ]
+    }
+  ],
+  "description": "Url params editor",
+  "keywords": [
+    "url",
+    "url editor",
+    "no redirect",
+    "edit url params"
+  ]
+}
