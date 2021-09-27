@@ -3,18 +3,20 @@
   "version": "0.0.1",
   "filename": "urlvars.js",
   "license": "MIT",
-  "author": "Alexander Farkas <kapitonoval2012@gmail.com>",
+  "author": "Alexey Kapitonov <kapitonoval2012@gmail.com>",
   "scripts": {
-    "build": "grunt",
-    "prepublishOnly": "npm run build"
+    "test": "gulp",
+    "build": "gulp build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/kapitonoval/url-vars-editor.git"
   },
-  "namespace": "urlVars",
   "main": "urlvars.js",
-  "browser": "urlvars.js",
+  "files":  [
+    "urlvars.js"
+  ],
   "devDependencies": {
     "grunt": "~1.1.0",
     "grunt-bytesize": "~0.2.0",
@@ -33,14 +35,7 @@
     "typescript": "^4.1.5"
   },
   "npmName": "url-vars-editor",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "urlvars.js"
-      ]
-    }
-  ],
+
   "description": "Url params editor",
   "keywords": [
     "url",
